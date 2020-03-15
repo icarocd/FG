@@ -16,5 +16,5 @@ https://doi.org/10.1016/j.ipm.2019.03.008
 }
 ```
 
-The source code uses Java 11 and Maven.
+The source code uses Java 11+ and Maven.
 Check fusionGraph.sh for instructions.
