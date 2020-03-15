@@ -1,4 +1,5 @@
 Implementation of the article:
+
 Unsupervised Graph-based Rank Aggregation for Improved Retrieval
 https://doi.org/10.1016/j.ipm.2019.03.008
 
@@ -13,3 +14,7 @@ https://doi.org/10.1016/j.ipm.2019.03.008
   year={2019},
   publisher={Elsevier}
 }
+```
+
+The source code uses Java 11 and Maven.
+Check fusionGraph.sh for instructions.
