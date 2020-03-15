@@ -1,6 +1,6 @@
 Implementation of the article:
 
-Unsupervised Graph-based Rank Aggregation for Improved Retrieval
+Unsupervised Graph-based Rank Aggregation for Improved Retrieval<br/>
 https://doi.org/10.1016/j.ipm.2019.03.008
 
 ```
