@@ -152,11 +152,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 	}
 
 	private static LineIterator lineIterator(InputStream inputStream) {
-		try {
-			return IOUtils.lineIterator(inputStream, Charset.defaultCharset());
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		return IOUtils.lineIterator(inputStream, Charset.defaultCharset());
 	}
 
 	public static String readFileToString(String pathname) {
@@ -342,7 +338,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
 	 */
 	public static Iterable<File> iterableFiles(File folder) {
 		assertDirectoryExists(folder);
-		return com.google.common.io.Files.fileTreeTraverser().postOrderTraversal(folder).filter(f -> f.isFile());
+		return com.google.common.collect.Iterables.filter(com.google.common.io.Files.fileTraverser().depthFirstPostOrder(folder), File::isFile);
 	}
 
 	/**
