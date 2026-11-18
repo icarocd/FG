@@ -153,7 +153,7 @@ public abstract class SubgraphsHandler {
 	    try{
             return consumeMetadataFromFile(Iterators.peekingIterator(lineIterator));
         }finally{
-            lineIterator.close();
+            FileUtils.closeQuietly(lineIterator);
         }
     }
 	private Map<String, String> consumeMetadataFromFile(PeekingIterator<String> peekingLineIterator) {
